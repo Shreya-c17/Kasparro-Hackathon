@@ -33,6 +33,30 @@ https://drive.google.com/file/d/16Xluew0UbKGyryWcE6zX0fOHqwNDdeJ4/view
 
 ---
 
+## 📸 Screenshots
+
+### 🏬 Product Store
+
+![Store](./screenshots/store.png)
+
+### 💳 Checkout + Recovery Modal
+
+![Checkout](./screenshots/checkout.png)
+
+### 📊 Merchant Dashboard Overview
+
+![Dashboard](./screenshots/dashboard.png)
+
+### ⚡ Intervention Insights
+
+![Interventions](./screenshots/interventions.png)
+
+### 🧠 Session Intelligence
+
+![Sessions](./screenshots/sessions.png)
+
+---
+
 ## ⚡ Quick Start
 
 ```bash
