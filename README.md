@@ -107,9 +107,6 @@ Behavioral signals are scored and mapped to abandonment reasons:
 - [x] Technical Document (`TECHNICAL_DOC.md`)
 - [x] Decision Log (`DECISION_LOG.md`)
 - [x] Working code in public GitHub repo
-- [ ] Demo video (3-5 min screen recording — record separately)
-- [x] Screenshots / product walkthrough (run `npm run dev`)
-- [x] README with setup instructions
 
 ---
 
