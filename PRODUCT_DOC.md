@@ -1,5 +1,6 @@
-Product Document — AI Checkout Recovery Agent
-Kasparro Agentic Commerce Hackathon | Track 2 | April 2026
+# Product Document — AI Checkout Recovery Agent
+
+**Kasparro Agentic Commerce Hackathon | Track 2 | April 2026**
 
 The Problem
 Cart abandonment is e-commerce's largest unsolved revenue problem. ~70% of checkout sessions end without a purchase. The standard industry response — a follow-up email sent hours later — treats every user identically, regardless of why they left.
