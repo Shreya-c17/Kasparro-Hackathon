@@ -1,4 +1,4 @@
-**Technical Document — AI Checkout Recovery Agent**  
+# Technical Document — AI Checkout Recovery Agent 
 **Kasparro Agentic Commerce Hackathon | Track 2 | April 2026**
 
 Next.js 14 powers this real-time checkout abandonment detection system with client-side behavior tracking and AI-driven recovery modals. Claude Haiku classifies user intent with millisecond rule-based fallback for guaranteed sub-2s interventions. Optimized for hackathon constraints with production-ready architecture patterns.
