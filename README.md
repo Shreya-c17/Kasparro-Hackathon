@@ -115,7 +115,8 @@ Behavioral signals are scored and mapped to abandonment reasons:
 
 ## 👤 Team
 
-Solo submission — [Your Name], [College]
+C Shreya
+Sonal M Jakhar 
 
 ---
 
