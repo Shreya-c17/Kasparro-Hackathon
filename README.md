@@ -6,37 +6,67 @@
 
 ---
 
-## 🚀 Live Demo
+## 💡 Problem Statement
 
-1. Visit the **Demo Store** → add items to cart
-2. Go to **Checkout**
-3. Trigger abandonment signals: try a coupon, hover prices, check shipping
-4. Watch the **AI Debug Panel** (bottom right) show risk rising
-5. Move mouse to top of screen (exit intent) → AI recovery modal appears
-6. See the **Merchant Dashboard** for aggregated recovery metrics
+Cart abandonment is one of the largest revenue leaks in ecommerce. Most solutions rely on delayed recovery methods like emails or retargeting — after the user has already left.
+
+There is no real-time system that understands *why* a user hesitates during checkout and proactively resolves that friction.
+
+---
+
+## 🚀 Solution Overview
+
+This project introduces an **AI-powered checkout recovery system** that:
+
+* Tracks behavioral signals in real-time
+* Classifies user intent (price sensitivity, trust issues, etc.)
+* Intervenes with targeted strategies
+* Provides merchant analytics via a dashboard
+
+👉 Prevents drop-off *before it happens*
+
+---
+
+## 🎥 Demo Video
+
+https://drive.google.com/file/d/16Xluew0UbKGyryWcE6zX0fOHqwNDdeJ4/view
+
+---
+
+## 📸 Screenshots
+
+### 🏬 Product Store
+
+![Store](./screenshots/store.png)
+
+### 💳 Checkout + Recovery Trigger
+
+![Checkout](./screenshots/checkout.png)
+
+### 📊 Merchant Dashboard Overview
+
+![Dashboard](./screenshots/dashboard.png)
+
+### ⚡ Intervention Effectiveness
+
+![Interventions](./screenshots/interventions.png)
+
+### 🧠 Session Intelligence
+
+![Sessions](./screenshots/sessions.png)
 
 ---
 
 ## ⚡ Quick Start
 
 ```bash
-# Clone and install
-git clone https://github.com/YOUR_USERNAME/kasparro-checkout-recovery
-cd kasparro-checkout-recovery
+git clone https://github.com/Shreya-c17/Kasparro-Hackathon
+cd Kasparro-Hackathon
 npm install
-
-# Run development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
-
-### Optional: Add Claude API key for AI-powered classification
-```bash
-# Create .env.local
-echo "ANTHROPIC_API_KEY=your_key_here" > .env.local
-```
-Without the key, the system uses the rule-based classifier (equally effective for demo).
+Open: http://localhost:3000
 
 ---
 
@@ -45,76 +75,122 @@ Without the key, the system uses the rule-based classifier (equally effective fo
 ```
 src/
 ├── app/
-│   ├── page.tsx              # Landing page
-│   ├── store/page.tsx        # Demo product store
-│   ├── checkout/page.tsx     # Checkout with AI recovery
-│   ├── dashboard/page.tsx    # Merchant analytics
+│   ├── store/page.tsx
+│   ├── checkout/page.tsx
+│   ├── dashboard/page.tsx
 │   └── api/
-│       ├── classify/route.ts # Intent classification API
-│       └── track/route.ts    # Behavior event tracking
 ├── components/
-│   └── checkout/
-│       ├── RecoveryModal.tsx      # Personalized intervention UI
-│       └── BehaviorDebugPanel.tsx # Real-time behavior visualization
 ├── lib/
-│   ├── tracker.ts            # Client-side behavior tracking
-│   ├── products.ts           # Synthetic product catalog
-│   └── metrics.ts            # Dashboard metrics
-└── types/index.ts            # TypeScript types
+└── types/
 ```
 
 ---
 
-## 🧠 How the AI Works
+## 🧠 How the System Works
 
 ### 1. Behavior Tracking
-The `BehaviorTracker` class monitors:
-- Coupon field focus/attempts
-- Price element hover events
-- Back button presses
-- Mouse exit intent (cursor leaves viewport top)
-- Inactivity periods (15s timeout)
-- Shipping section engagement
-- Payment method hesitation
+
+Tracks:
+
+* Coupon attempts
+* Price hovers
+* Shipping checks
+* Payment hesitation
+* Exit intent
+* Inactivity
+
+---
 
 ### 2. Intent Classification
-Behavioral signals are scored and mapped to abandonment reasons:
 
-| Signal | Abandonment Reason | Weight |
-|--------|-------------------|--------|
-| Coupon attempts | Price Sensitive | +40 |
-| Price hovers > 2 | Price Sensitive | +30 |
-| Back button pressed | Trust Issues | +35 |
-| Shipping checks > 1 | Shipping Confusion | +45 |
-| Inactivity > 2 periods | Just Browsing | +40 |
-| Payment hesitation | Payment Issues | +50 |
+| Signal             | Reason             |
+| ------------------ | ------------------ |
+| Coupon attempts    | Price Sensitive    |
+| Shipping checks    | Shipping Confusion |
+| Back navigation    | Trust Issues       |
+| Inactivity         | Just Browsing      |
+| Payment hesitation | Payment Issues     |
+
+---
 
 ### 3. Recovery Strategies
 
-| Reason | Strategy | Example Intervention |
-|--------|----------|---------------------|
-| Price Sensitive | Discount Offer | "₹200 off, expires in 10s" |
-| Trust Issues | Trust Signals | Show reviews, return policy, SSL |
-| Shipping Confusion | Delivery Clarity | "Arrives tomorrow if ordered now" |
-| Just Browsing | Soft Nudge | "We'll save your cart for 24hrs" |
-| Payment Issues | Fast Checkout | "Try 0% EMI or UPI" |
+| Intent             | Action            |
+| ------------------ | ----------------- |
+| Price Sensitive    | Discount          |
+| Trust Issues       | Reviews / Policy  |
+| Shipping Confusion | Delivery clarity  |
+| Just Browsing      | Save cart         |
+| Payment Issues     | Alternate payment |
+
+---
+
+## ⚙️ AI vs Deterministic Logic
+
+* AI → interprets behavior patterns
+* Logic → tracks events, scoring, triggers actions
+
+---
+
+## ⚠️ Failure Handling
+
+* AI unavailable → rule-based fallback
+* Missing data → last known signals
+* No clear intent → generic recovery
+* API failure → no UI break
+
+---
+
+## 📊 Merchant Value
+
+* Reduces cart abandonment
+* Improves conversion
+* Provides actionable insights
 
 ---
 
 ## 📋 Submission Checklist
 
-- [x] Product Document (`PRODUCT_DOC.md`)
-- [x] Technical Document (`TECHNICAL_DOC.md`)
-- [x] Decision Log (`DECISION_LOG.md`)
-- [x] Working code in public GitHub repo
-- [ ] Demo Video https://drive.google.com/file/d/16Xluew0UbKGyryWcE6zX0fOHqwNDdeJ4/view?usp=drive_link
+* [x] Product Document
+* [x] Technical Document
+* [x] Decision Log
+* [x] Working code
+* [x] Demo video
+* [x] Screenshots
+* [x] Contribution note
+
+---
+
+## 👥 Contribution Note
+
+**Shreya C**
+
+* Led product thinking, system design, and implementation
+* Built core features: tracking, classification, recovery system
+* Developed UI, dashboard, and logic
+* Authored all documentation
+
+**Sonal M Jakhar**
+
+* Contributed to testing and validation
+* Assisted in UI refinement and usability improvements
+* Supported documentation review
+* Helped prepare demo assets
+
+---
+
+## 🧩 Decision Log
+
+* Real-time intervention > post-abandonment emails
+* Hybrid AI + rules for reliability
+* Focus on behavior signals over static data
 
 ---
 
 ## 👤 Team
 
-C Shreya,
-Sonal M Jakhar 
+* Shreya C
+* Sonal M Jakhar
 
 ---
 
