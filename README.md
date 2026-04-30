@@ -107,6 +107,7 @@ Behavioral signals are scored and mapped to abandonment reasons:
 - [x] Technical Document (`TECHNICAL_DOC.md`)
 - [x] Decision Log (`DECISION_LOG.md`)
 - [x] Working code in public GitHub repo
+- [ ] Demo Video https://drive.google.com/file/d/16Xluew0UbKGyryWcE6zX0fOHqwNDdeJ4/view?usp=drive_link
 
 ---
 
