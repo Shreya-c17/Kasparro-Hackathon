@@ -32,7 +32,7 @@
 - 💸 Generic discount tools erode margins  
 - 📊 Needs explainable recovery metrics  
 
-## What I Built
+## What We Built
 
 **Real-time AI Checkout Recovery Agent** that:
 
@@ -94,7 +94,7 @@ riskScore ≥ 40 OR mouseleave(clientY≤10px)
 |------------|-------|-----|
 | Hide AI scores | Show "87% price sensitive" | Merchants trust explainable systems. Enables A/B tuning. |
 
-## What I Chose NOT to Build
+## What We Chose NOT to Build
 
 | Feature | Why Skipped | Next Step |
 |---------|-------------|-----------|
