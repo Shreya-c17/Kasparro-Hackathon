@@ -115,7 +115,7 @@ Behavioral signals are scored and mapped to abandonment reasons:
 
 ## 👤 Team
 
-C Shreya
+C Shreya,
 Sonal M Jakhar 
 
 ---
