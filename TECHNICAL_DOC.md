@@ -186,7 +186,7 @@ Single modal per session via `sessionStorage.hasShownRecoveryModal`.
 - No real Shopify (hackathon rules)
 - Single intervention per session
 
-## What I Would Improve with More Time
+## What We Would Improve with More Time
 
 - Shopify Storefront GraphQL API integration
 - Supabase + real-time dashboard
